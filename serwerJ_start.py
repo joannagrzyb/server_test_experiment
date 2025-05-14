@@ -33,12 +33,13 @@ t3.to(device)
 print('#3.2', t3.device)
 
 # Przykład z modelem
-NNetwork = NNetwork(input_size=3, num_classes=3)
-print('#4.1', NNetwork.device)
-# Najczęściej trzeba będzie się upewnić że model jest na odpowiednim urządzeniu lub zmienić
-NNetwork.to(device)
-print('#4.2', NNetwork.device)
+# NNetwork = NNetwork(input_size=3, num_classes=3)
+# print('#4.1', NNetwork.device)
+# # Najczęściej trzeba będzie się upewnić że model jest na odpowiednim urządzeniu lub zmienić
+# NNetwork.to(device)
+# print('#4.2', NNetwork.device)
 
 # Czasami model może być od razu inicjalizowany na odpowiednim urządzeniu
 # To zależy od implementacji
 NNetwork = NNetwork(input_size=3, num_classes=3, device=device)
+print('#4.3', NNetwork.device)
