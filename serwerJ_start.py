@@ -2,7 +2,7 @@ import torch
 import numpy as np
 
 # jakaś własna implementacja sieci
-from .nnetwork import NNetwork
+from nnetwork import NeuralNetwork as NNetwork
 
 # jezeli na komputerze i nie ma GPU to piszemy:
 # device = torch.device("cpu")
